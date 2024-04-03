@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content=""IE=edge">
+    <meta name=""viewport" content=""width=device-width, initial-scale="1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text"></div>
+    
+    <input type="number" id="num">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js">
+    </script>
+    <script>
+        console.log($)
+        const personText = '我是鄭邵夫';
+        
+        $(document).ready(function(){
+            $('#text').text(personText);
+            // $('#text') -> 取得DOM元素
+            // 寫入值到元素
+
+            $('#num').on('change', function(){ // 監聽
+                console.log($(this).val());
+                // $(this) 取得DOM
+                // 取得值
+            })
+            console.log($('#text'));
+        })
+    </script>
+</body>
+</html>

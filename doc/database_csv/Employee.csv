@@ -1,0 +1,21 @@
+EmployeeId,Title,BirthDate,HireDate,Address,City,Phone,Email
+1,General Manager,1962/2/18,2002/8/14,11120 Jasper Ave NW,Edmonton,+1 (780) 428-9482,andrew@chinookcorp.com
+2,Sales Manager,1958/12/8,2002/5/1,825 8 Ave SW,Calgary,+1 (403) 262-3443,nancy@chinookcorp.com
+3,Sales Support Agent,1973/8/29,2002/4/1,1111 6 Ave SW,Calgary,+1 (403) 262-3443,jane@chinookcorp.com
+4,Sales Support Agent,1947/9/19,2003/5/3,683 10 Street SW,Calgary,+1 (403) 263-4423,margaret@chinookcorp.com
+5,Sales Support Agent,1965/3/3,2003/10/17,7727B 41 Ave,Calgary,1 (780) 836-9987,steve@chinookcorp.com
+6,IT Manager,1973/7/1,2003/10/17,5827 Bowness Road NW,Calgary,+1 (403) 246-9887,michael@chinookcorp.com
+7,IT Staff,1970/5/29,2004/1/2,590 Columbia Boulevard West,Lethbridge,+1 (403) 456-9986,robert@chinookcorp.com
+8,IT Staff,1968/1/9,2004/3/4,923 7 ST NW,Lethbridge,+1 (403) 467-3351,laura@chinookcorp.com
+9,Playlist Editing and Creation Manager,1970/2/5,2004/3/25,456 Main St,Kitchener,+1 (416) 555-7890,alice@chinookcorp.com
+10,Playlist Editing and Creation Manager,1965/6/17,2003/7/10,789 Oak Lane,Kitchener,+1 (514) 555-1234,bob@chinookcorp.com
+11,Playlist Editing and Creation Manager,1975/7/1,2004/11/28,234 Elm Street,Edmonton,+1 (604) 555-5678,carol@chinookcorp.com
+12,Playlist Editing and Creation Manager,1961/8/21,2002/5/15,567 Pine Avenue,Edmonton,+1 (613) 555-9876,david@chinookcorp.com
+13,Playlist Editing and Creation Manager,1974/1/8,2003/8/22,890 Maple Drive,Edmonton,+1 (905) 555-4321,emily@chinookcorp.com
+14,Playlist Editing and Creation Manager,1968/10/18,2002/3/5,123 Cedar Road,Toronto,+1 (902) 555-8765,frank@chinookcorp.com
+15,Playlist Editing and Creation Manager,1971/9/26,2004/2/17,456 Birch Lane,Toronto,+1 (250) 555-2109,grace@chinookcorp.com
+16,Playlist Editing and Creation Manager,1963/11/16,2003/10/9,789 Walnut Street,Toronto,+1 (306) 555-6543,henry@chinookcorp.com
+17,Playlist Editing and Creation Manager,1972/8/31,2002/9/1,234 Spruce Avenue,Vancouver¡^,+1 (709) 555-8901,isabel@chinookcorp.com
+18,Playlist Editing and Creation Manager,1966/2/24,2004/7/30,567 Sycamore Drive,Vancouver¡^,+1 (778) 555-3456,jason@chinookcorp.com
+19,Playlist Editing and Creation Manager,1971/1/14,2002/12/12,890 Chestnut Road,Vancouver¡^,+1 (506) 555-6789,karen@chinookcorp.com
+20,Playlist Editing and Creation Manager,1959/4/10,2003/4/8,123 Willow Lane,Ottawa,+1 (819) 555-4321,leo@chinookcorp.com

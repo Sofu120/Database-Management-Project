@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        {{ text }}
+        {{ name }}
+    </div>
+
+    <script>
+        // 把資料拉出
+        Vue.createApp({
+            // data 函式
+            data: function(){
+                return{
+                    text: '我叫鄭邵夫',
+                    name: '邵夫',
+                    num: 0
+                    // 變數 num、數值0
+                }
+            },
+            // methods 物件
+            methods: {
+
+            },
+            // mounted 函式
+            mounted: function(){
+
+            },
+        }).mount('#app');
+    </script>
+</body>
+</html>

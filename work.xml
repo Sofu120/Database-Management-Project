@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone = "yes"?>
+<StarMovieData>
+    <Star starID = "cf" starredIn = "sw tesb rj hhs">
+        <Name>Carrie Fisher</Name>
+        <Address>
+            <Street>123 Maple St.</Street>
+            <City>Hollywood</City>
+        </Address>
+        <Address>
+            <Street>5 Locust Ln.</Street>
+            <City>Malibu</City>
+        </Address>
+    </Star>
+    <Star starID = "mh" starredIn = "swS tesb rj">
+        <Name>Mark Hamill</Name>
+        <Address>
+            <Street>456 Oak Rd.</Street>
+            <City>Brentwood</City>
+        </Address>
+    </Star>
+    <Star starID = "hf" starredIn = "sw tesb rj fw">
+        <Name>Harrison Ford</Name>
+    </Star>
+    <Star starID = "md" starredIn = "tbi">
+        <Name>Matt Damon</Name>
+    </Star>
+    <Movie movieID = "sw" starsOf = "cf mh">
+        <Title>Star Wars</Title>
+        <Year>1977</Year>
+    </Movie>
+    <Movie movieID = "fw" starsOf = "hf">
+        <Title>Firewall</Title>
+        <Year>2006</Year>
+    </Movie>
+    <Movie movieID = "tesb" starsOf = "cf mh">
+        <Title>The Empire Strike Back</Title>
+        <Year>1980</Year>
+    </Movie>
+    <Movie movieID = "rj" starsOf = "cf mh">
+        <Title>Return of the Jedi</Title>
+        <Year>1983</Year>
+    </Movie>
+    <Movie movieID = "hhs" starsOf = "cf">
+        <Title>Hannah and Her Sisters</Title>
+        <Year>1985</Year>
+    </Movie>
+    <Movie movieID = "tbi" starsOf = "md">
+        <Title>The Bourne Identity</Title>
+        <Year>2002</Year>
+    </Movie>
+</StarMovieData>

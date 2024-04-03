@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../img/myglogo.png">
+    <title>Python Desktop App CRUD (Create Read Update and Delete ) sqlite3 using python eel</title>
+</head>
+<body>
+<div class="container">
+<p style="text-align:center;"><h2>Python Desktop App CRUD (Create Read Update and Delete ) sqlite3 using python eel</h2></p>
+<p style="text-align:right;"><button type="button" class="btn" id="btn_addnew">Add New</button></p>
+<table id="employeedatatable" class="styled-table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Action</th>
+    </tr>
+</table> 
+ 
+<div class="modalContainer" id="Addnewmodal">
+  <div class="modal-content">
+    <span id="close" class="close">×</span>
+    <p style="text-align:center;"><h2>Add New Employee</h2></p>
+    <form class="form-detail" action="#" method="post" id="myform">
+        <div class="form-row">
+            <label>Full Name:</label> 
+            <input type="text" name="txtfullname" id="txtfullname" class="input-text" required placeholder="ex: Cairocoders Ednalan">
+        </div>
+        <div class="form-row">
+            <label>Position:</label>
+            <input type="text" name="txtposition" id="txtposition" class="input-text" required>
+        </div>
+        <div class="form-row">
+            <label>Office:</label>
+            <input type="text" name="txtoffice" id="txtoffice" class="input-text" required>
+        </div>
+        <div class="form-row-last">
+            <input type="submit" name="register" class="button" value="Add New Employee" onclick="save_register_js();">
+        </div>
+        <div class="box"><label class="label_input" id="return_register" style="width: 90%;color:green;font-weight:bold;"></label></div>
+    </form>
+  </div>
+</div>
+ 
+<div class="modalContainer" id="Edit_modal">
+  <div class="modal-content">
+    <span id="close" class="closeedit">×</span>
+    <p style="text-align:center;"><h2>Edit Employee</h2></p>
+    <form class="form-detail" action="#" method="post" id="myformedit"><input type="hidden" name="id" id="id">
+        <div class="form-row">
+            <label>Full Name:</label> 
+            <input type="text" name="edit_name" id="edit_name" class="input-text" required>
+        </div>
+        <div class="form-row">
+            <label>Position:</label>
+            <input type="text" name="edit_position" id="edit_position" class="input-text" required>
+        </div>
+        <div class="form-row">
+            <label>Office:</label>
+            <input type="text" name="edit_office" id="edit_office" class="input-text" required>
+        </div>
+        <div class="form-row-last">
+            <input type="submit" name="register" class="button" value="Update" onclick="save_edit();">
+        </div>
+        <div class="box"><label class="label_input" id="return_update" style="width: 90%;color:green;font-weight:bold;"></label></div>
+    </form>
+  </div>
+</div>
+ 
+<div class="modalContainer" id="Delete_modal">
+  <div class="modal-content">
+    <span id="close" class="closedelete">×</span>
+    <p style="text-align:center;"><h2>Delete Employee</h2></p>
+    <p style="text-align:center;"><h3>Are you sure you want to delete this data?</h3></p>
+    <div class="form-detail">
+    <input type="hidden" name="idvalue" id="idvalue"> 
+    <input type="submit" name="btndelete" class="button" value="Delete" onclick="btn_submitdelete($('#idvalue').val());">
+    <div class="box"><label class="label_input" id="return_delete" style="width: 90%;color:green;font-weight:bold;"></label></div>
+    </div>
+  </div>
+</div>
+ 
+</div>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
