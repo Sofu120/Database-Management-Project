@@ -12,17 +12,6 @@ This project aims to develop a comprehensive intranet-based Customer Relationshi
 
 ## Technologies Used
 
-- **Front-end**: [Specify technologies e.g., HTML, CSS, JavaScript, React/Angular/Vue]
-- **Back-end**: [Specify Back-end framework e.g., Node.js/Express, Django, Flask]
-- **Database**: [Specify Database e.g., MySQL, PostgreSQL, MongoDB]
-- **Authentication**: [Specify method/library e.g., JWT, OAuth]
-- **Others**: [Any other technologies used]
-
-## Getting Started
-
-Provide instructions on how to set up the project locally. This might include steps for cloning the repository, installing dependencies, setting up the database, and running the server.
-
-```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
-# instructions for setting up and running the project
+- **Front-end**: HTML, CSS, JavaScript
+- **Back-end**: Flask
+- **Database**: MySQL, SQLite
