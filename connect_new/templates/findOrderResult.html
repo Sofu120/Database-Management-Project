@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block title %}Order Information{% endblock %}
+ 
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order List</title>
+</head>
+<body>
+
+<h3>Order Information</h3>
+    {% if msg %}
+        <p>{{ msg }}</p>
+    {% else %}
+    <table border="5">
+        <thead>
+            <tr>
+                <th>CustomerID</th>
+                <th>CustomerName</th>
+                <th>Sex</th>
+                <th>Country</th>
+                <th>Publisher</th>
+                <th>Date</th>
+                <th>Track_Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for row in rows %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }} {{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                    <td>{{ row[5] }}</td>
+                    <td>{{ row[6] }}</td>
+                    <td>{{ row[7] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br><br>
+    {% endif %}
+
+<a href="/gotoFindOrder">Go back to find order page</a>
+
+</body>
+</html>
+{% endblock %}

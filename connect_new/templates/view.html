@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block title %}Employee{% endblock %}
+ 
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+
+<h3>Employee Information</h3>
+<table border=5>
+    <thead>
+        <td>EmployeeId</td>
+        <td>Title</td>
+        <td>BirthDate</td>
+        <td>HireDate</td>
+        <td>Address</td>
+        <td>City</td>
+        <td>Phone</td>
+        <td>Email</td>
+    </thead>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["EmployeeId"]}}</td>
+            <td>{{row["Title"]}}</td>
+            <td>{{row["BirthDate"]}}</td>
+            <td>{{row["HireDate"]}}</td>
+            <td>{{row["Address"]}}</td>
+            <td>{{row["City"]}}</td>
+            <td>{{row["Phone"]}}</td>
+            <td>{{row["Email"]}}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+<br><br>
+
+<a href="/employee">Go back to employee information page</a>
+
+</body>
+</html>
+{% endblock %}

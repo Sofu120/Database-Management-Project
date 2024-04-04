@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}findTrackCountry{% endblock %}
+ 
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Track's Country</title>
+</head>
+<body>
+    <h2>Please enter which Track do you want to know:</h2>
+    <form action = "/findTrackCountry" method="post">
+    <table>
+        <tr><td>TrackName</td><td><input type="text" name="Track_Name" required></td></tr>
+        <tr><td><input type="submit" value="Submit"></td></tr>
+    </table>
+    </form>
+</body>
+</html>
+{% endblock %}

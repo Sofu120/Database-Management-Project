@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %}Employee{% endblock %}
+ 
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Employee</title>
+</head>
+<body>
+    <h2>Please enter the employee information:</h2>
+    <form action = "/savedetails" method="post">
+    <table>
+        <tr><td>EmployeeId</td><td><input type="text" name="EmployeeId" required></td></tr>
+        <tr><td>Title</td><td><input type="text" name="Title" required></td></tr>
+        <tr><td>BirthDate</td><td><input type="text" name="BirthDate" required></td></tr>
+        <tr><td>HireDate</td><td><input type="text" name="HireDate" required></td></tr>
+        <tr><td>Address</td><td><input type="text" name="Address" required></td></tr>
+        <tr><td>City</td><td><input type="text" name="City" required></td></tr>
+        <tr><td>Phone</td><td><input type="text" name="Phone" required></td></tr>
+        <tr><td>Email</td><td><input type="email" name="Email" required></td></tr>
+        <tr><td><input type="submit" value="Submit"></td></tr>
+    </table>
+    </form>
+</body>
+</html>
+{% endblock %}

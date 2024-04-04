@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block title %}BestSellingPublisher Information{% endblock %}
+ 
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BestSellingPublisher List</title>
+</head>
+<body>
+
+<h3>BestSellingPublisher Information</h3>
+    {% if msg %}
+        <p>{{ msg }}</p>
+    {% else %}
+        <table border="5">
+            <thead>
+                <tr>
+                    <th>Publisher</th>
+                    <th>Total Times Purchased</th>
+                    <th>TotalSales($USD)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for publisher in publisher_sales %}
+                    <tr>
+                        <td>{{ publisher[0] }}</td>
+                        <td>{{ publisher[1] }}</td>
+                        <td>{{ publisher[2] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <p>訂單詳情:</p>
+        <table border="5">
+            <thead>
+                <tr>
+                    <th>Publisher</th>
+                    <th>TrackID</th>
+                    <th>Track Name</th>
+                    <th>Artist Name</th>
+                    <th>Album Name</th>
+                    <th>Media Type</th>
+                    <th>Genre</th>
+                    <th>Times Purchased</th>
+                    <th>TotalPrice($USD)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for row in rows %}
+                    <tr>
+                        <td>{{ row[0] }}</td>
+                        <td>{{ row[1] }}</td>
+                        <td>{{ row[2] }}</td>
+                        <td>{{ row[3] }}</td>
+                        <td>{{ row[4] }}</td>
+                        <td>{{ row[5] }}</td>
+                        <td>{{ row[6] }}</td>
+                        <td>{{ row[7] }}</td>
+                        <td>{{ row[8] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br><br>
+    {% endif %}
+
+<a href="/">Go back to home page</a>
+
+</body>
+</html>
+{% endblock %}

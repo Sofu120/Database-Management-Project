@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}Employee{% endblock %}
+ 
+{% block content %}
+<!DOCTYPE html>
+<html>  
+<head>  
+    <title>delete record</title>  
+</head>  
+<body>  
+   
+    <h3>Remove Employee from the list</h3>  
+   
+<form action="/deleterecord" method="post">
+Employee_Id: <input type="text" name="EmployeeId" required>
+<input type="submit" value="Submit">  
+</form>  
+</body>  
+</html>  
+{% endblock %}

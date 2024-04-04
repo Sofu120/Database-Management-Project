@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+ 
+{% block title %}Home{% endblock %}
+ 
+{% block content %}
+<h1 class="h2">Welcome back, {{ username }}</h1>
+<br>
+<p>What are you looking for?</p>
+  <a class="py-2 d-none d-md-inline-block" href="/gotoFindTrack"><i class="fa fa-music" aria-hidden="true"></i> &nbsp&nbspWhat type of Track do you like?</a>
+  <br>
+  <a class="py-2 d-none d-md-inline-block" href="/findBestSellingPublisher"><i class="fa fa-building" aria-hidden="true"></i> &nbsp&nbspWhich publisher's track has the best selling? </a>
+  <br>
+  <a class="py-2 d-none d-md-inline-block" href="#"><i class="fa fa-users" aria-hidden="true"></i> &nbspWhat is popular this week?</a>
+  <br>
+  <a class="py-2 d-none d-md-inline-block" href="/gotoFindTrackCountry"><i class="fa fa-globe" aria-hidden="true"></i> &nbsp&nbspTrack country distribution</a>
+  <br>
+  <a class="py-2 d-none d-md-inline-block" href="/gotoFindOrder"><i class="fa fa-info-circle" aria-hidden="true"></i> &nbsp&nbspComplete buying details</a>
+  <br>
+{% endblock %}

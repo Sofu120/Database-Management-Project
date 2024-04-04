@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %}findOrder{% endblock %}
+ 
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Order</title>
+</head>
+<body>
+    <h2>Please enter Order's information:</h2>
+    <!-- <form name="orderForm" action="/findOrder" method="post" onsubmit="return validateForm()"> -->
+    <form action = "/findOrder" method="post">
+    <table>
+        <tr><td>Customer's FirstName</td><td><input type="text" name="FirstName"></td></tr>
+        <tr><td>Customer's LastName</td><td><input type="text" name="LastName"></td></tr>
+        <tr><td>Sex</td><td><input type="text" name="Sex"></td></tr>
+        <tr><td>Country</td><td><input type="text" name="Country"></td></tr>
+        <tr><td>Publisher</td><td><input type="text" name="Publisher_Name"></td></tr>
+        <!-- <tr><td>Start Date</td><td><input type="text" name="startDate" placeholder="YYYY/MM/DD"></td></tr>
+        <tr><td>End Date</td><td><input type="text" name="endDate" placeholder="YYYY/MM/DD"></td></tr> -->
+        <tr><td><input type="submit" value="Submit"></td></tr>
+    </table>
+    </form>
+</body>
+</html>
+{% endblock %}

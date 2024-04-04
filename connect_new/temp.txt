@@ -1,0 +1,9 @@
+注意事項:
+    Order這個Table改名為Invoice，其餘不變(還是OrderID)
+
+Query:
+    1. 給定Track的細節，找出符合條件的所有Track
+    2. 由大到小排出Publisher的總銷售狀況，並且列出各Publisher的銷售詳情
+    3.
+    4. 給定Track的名稱，找出買該首Track的國家分布及人數
+    5. 給定想找的Order的細節，找出符合條件的所有Order

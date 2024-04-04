@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block title %}Track's Country Information{% endblock %}
+ 
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track's Country List</title>
+</head>
+<body>
+
+<h3>Track's Country Information</h3>
+    {% if msg %}
+        <p>{{ msg }}</p>
+    {% else %}
+    <table border="5">
+        <thead>
+            <tr>
+                <th>TrackID</th>
+                <th>Track Name</th>
+                <th>Country</th>
+                <th>Numbers</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for row in rows %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br><br>
+    {% endif %}
+
+<a href="/gotoFindTrackCountry">Go back to find track's country page</a>
+
+</body>
+</html>
+{% endblock %}

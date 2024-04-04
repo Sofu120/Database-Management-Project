@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block title %}Track Information{% endblock %}
+ 
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track List</title>
+</head>
+<body>
+
+<h3>Track Information</h3>
+    {% if msg %}
+        <p>{{ msg }}</p>
+    {% else %}
+    <table border="5">
+        <thead>
+            <tr>
+                <th>TrackID</th>
+                <th>Track Name</th>
+                <th>Artist Name</th>
+                <th>Album Name</th>
+                <th>Media Type</th>
+                <th>Genre</th>
+                <th>Publisher</th>
+                <th>Bytes</th>
+                <th>Price($USD)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for row in rows %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                    <td>{{ row[5] }}</td>
+                    <td>{{ row[6] }}</td>
+                    <td>{{ row[7] }} Bytes</td>
+                    <td>{{ row[8] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br><br>
+    {% endif %}
+
+<a href="/gotoFindTrack">Go back to find track page</a>
+
+</body>
+</html>
+{% endblock %}
