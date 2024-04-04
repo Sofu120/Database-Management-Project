@@ -9,7 +9,7 @@ This project aims to develop a comprehensive intranet-based Customer Relationshi
 - **CRUD Operations**: Enables comprehensive management of customer data and sales information, facilitating operations such as adding new customer records, updating existing information, reading/viewing data, and deleting records.
 - **User Authentication**: Implements secure login mechanisms to authenticate users, ensuring that only authorized personnel can access the system.
 - **Access Control**: Differentiates user permissions based on roles, regulating the scope of actions each user can perform within the system, thereby enhancing data security and operational efficiency.
-- **Admin Dashboard**: Gets access to an administrative dashboard using UI where they can view, manage, and modify the data.
+- **Admin Dashboard**: Gets access to an administrative dashboard with UI where they can view, manage, and modify the data.
 
 ## Technologies Used
 
